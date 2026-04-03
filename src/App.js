@@ -4,6 +4,8 @@ import {UserProvider} from "./context/UserContext";
 import QuestionForm from "./components/questioncomponent/QuestionForm";
 import {QuestionProvider} from "./context/QuestionContext";
 import QuestionDisplay from "./components/questioncomponent/QuestionDisplay";
+import DiagnosticFlow from "./components/diagnosticcomponent/DiagnosticFlow";
+import {DiagnosticProvider} from "./context/DiagnosticContext";
 
 function App() {
     const username = "akash";
@@ -21,6 +23,11 @@ function App() {
                 <QuestionDisplay />
             </main>
         </QuestionProvider>
+        <DiagnosticProvider>
+            <main className="main-content">
+                <DiagnosticFlow />
+            </main>
+        </DiagnosticProvider>
     </div>
   );
 }
